@@ -1,0 +1,21 @@
+<html><head>
+    <script type="text/javascript">
+        var hoaover = new Image();
+        var hoaout = new Image();
+        function loadAnh() {
+            hoaover.src = "anh1.jpg";
+            hoaout.src = "anh0.jpg";
+        }
+        function onMouseOverEvent() {
+            document.img_hoa.src = hoaover.src
+        }
+        function onMouseOutEvent() {
+            document.img_hoa.src = hoaout.src
+        }
+    </script></head>
+        <body onload = "loadAnh();">
+        <img name="img_hoa" src="anh0.jpg" 
+    onmouseover="onMouseOverEvent();" 
+    onmouseout="onMouseOutEvent();" />
+    </body></html> 
+    
